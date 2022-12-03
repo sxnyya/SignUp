@@ -1,0 +1,202 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign-up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/LandingPage/SignIn/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+function confirmInput() {
+  fname = document.forms[0].fname.value;
+  alert("Hello " + fname + "! You will now be redirected to home the page");
+}
+// background color change function 
+function bgChange(bg) {
+  document.body.style.background = bg;
+}
+</script>
+</head>
+
+<body style="text-align: center;">
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- conatiner fluid so that its end to end -->
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <!-- linking all the pages for easy travel around the website -->
+          <a class="nav-link active" href="https://sxnyya.github.io/LandingPage/"> 
+            <p onmouseover="style.color='purple'" onmouseout="style.color='pink'">Home</p>
+            </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="https://sxnyya.github.io/Projects/"> <p onmouseover="style.color='purple'" onmouseout="style.color='pink'">Projects</p></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="https://sxnyya.github.io/AboutMe/"> <p onmouseover="style.color='purple'" onmouseout="style.color='pink'">About Me</p></a>
+        </li>  <li class="nav-item">
+          <a class="nav-link active" href="https://sxnyya.github.io/Blog/"> <p onmouseover="style.color='purple'" onmouseout="style.color='pink'">Blog</p></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="https://sxnyya.github.io/Games/"> <p onmouseover="style.color='purple'" onmouseout="style.color='pink'">Games</p></a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+  <!-- nav end -->
+
+<!-- table with many colors to change the bg when we hover with our mouse  -->
+  <table style="width:100%;height:70px">
+    <tr>
+      <td onmouseover="bgChange(this.style.backgroundColor)" 
+      onmouseout="bgChange('transparent')"
+      style="background-color:rgb(240, 140, 140)">
+      </td>
+      <td onmouseover="bgChange(this.style.backgroundColor)" 
+      onmouseout="bgChange('transparent')"
+      style="background-color:rgb(251, 188, 152)">
+      </td>
+      <td onmouseover="bgChange(this.style.backgroundColor)" 
+      onmouseout="bgChange('transparent')"
+      style="background-color:rgb(220, 245, 139)">
+      </td>
+      <td onmouseover="bgChange(this.style.backgroundColor)" 
+      onmouseout="bgChange('transparent')"
+      style="background-color:Khaki">
+      </td>
+      <td onmouseover="bgChange(this.style.backgroundColor)" 
+      onmouseout="bgChange('transparent')"
+      style="background-color:rgb(198, 253, 251)">
+      </td>
+      <td onmouseover="bgChange(this.style.backgroundColor)" 
+      onmouseout="bgChange('transparent')"
+      style="background-color:rgb(178, 218, 245)">
+      </td>
+      <td onmouseover="bgChange(this.style.backgroundColor)" 
+      onmouseout="bgChange('transparent')"
+      style="background-color:rgb(140, 240, 185)">
+      </td>
+      <td onmouseover="bgChange(this.style.backgroundColor)" 
+      onmouseout="bgChange('transparent')"
+      style="background-color:PaleGreen">
+      </td>
+      <td onmouseover="bgChange(this.style.backgroundColor)" 
+      onmouseout="bgChange('transparent')"
+      style="background-color:rgb(188, 167, 245)">
+      </td>
+      <td onmouseover="bgChange(this.style.backgroundColor)" 
+      onmouseout="bgChange('transparent')"
+      style="background-color:rgb(227, 140, 240)">
+      </td>
+      <td onmouseover="bgChange(this.style.backgroundColor)" 
+      onmouseout="bgChange('transparent')"
+      style="background-color:rgb(251, 152, 239)">
+      </td>
+      <td onmouseover="bgChange(this.style.backgroundColor)" 
+      onmouseout="bgChange('transparent')"
+      style="background-color:rgb(255, 195, 195)">
+      </td>
+      <!-- variety of colors :) -->
+    </tr>
+  </table>
+
+
+<!-- fluid container for end to end bar -->
+  <div  style="background-color: #b39bc8;" class="container-fluid text-white text-center p-2 "> <h3 onmouseover="style.color='black'" onmouseout="style.color='white'">CONTACT ME </h3></div>
+  <!-- adding padding to the text and form because it was sticking to the left corner  -->
+  <div style="padding:3%;"> 
+
+<!-- after submission back to home page -->
+<form onsubmit="confirmInput()" action="/LandingPage/index.html">
+  <p style="padding-bottom: 2% ; font-size: 150%;" onmouseover="style.color='purple'" onmouseout="style.color='black'" >Enter your email to sign in and get in touch with us </hp> <input id="fname" type="text" size="20">
+  <input type="submit">
+</form>
+
+
+<!-- linking the next part to sketch and css -->
+  <main> 
+    <div class="container" style="padding:0; ">
+        <div class="header">
+            <h2>Create an Account</h2>
+        </div>
+
+        <form class="form" id="form">
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your Username">
+                <p class="errorMessage">Enter a unique name</p>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your Email">
+            </div>
+
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your Password">
+            </div>
+
+            <div class="form-control">
+                <label for="password2">Confirm Password</label>
+                <input type="password" id="password2" placeholder="Confirm your Password">
+            </div>
+
+            <button>Submit</button>
+        </form>
+
+        <div class="complete-modal">
+            <h2>Successful!</h2>
+        </div>
+    </div>
+    
+</main>
+<div class="animate-circles">
+    <div class="red circle"></div>
+    <div class="blue circle"></div>
+    <div class="red circle"></div>
+    <div class="circle"></div>
+    <div class="orange circle"></div>
+    <div class="red circle"></div>
+    <div class="circle"></div>
+    <div class="red circle"></div>
+    <div class="blue circle"></div>
+    <div class="orange circle"></div>
+</div>
+<script src="./app.js"></script>
+
+<!-- feedback  -->
+<h3 style="padding-bottom: 2% ; padding-top: 2%;" onmouseover="style.color='purple'" onmouseout="style.color='black'" style="padding-top:2% ;"> Did you like this website? Do you wish to give any feedback?</h3>
+<button onclick="myFunction()">Feedback</button>
+<p id="demo"></p>
+<script>
+  function myFunction() {
+    let text;
+    let person = prompt("Please enter the feedback:", "What did you like? What more do you expect?");
+    if (person == null || person == "") {
+      text = "User cancelled the prompt.";
+    } else {
+      text = "Thank you so much, your feedback means a lot to me!";
+    }
+    document.getElementById("demo").innerHTML = text;
+  }
+  </script>
+  </div>
+
+
+  
+  
+
+
+</body>
+</html>
+
